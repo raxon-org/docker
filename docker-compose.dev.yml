@@ -12,13 +12,13 @@ services:
     volumes:
       - .:/Application
     tmpfs:
-      - /tmp/difference/fun
+      - /tmp/raxon/org
     command: ['/usr/bin/init']
     ports:
       - "5002:80"
       - "5003:443"
     networks:
-      - difference-fun-network
+      - raxon-org-network
 networks:
-  difference-fun-network:
+  raxon-org-network:
     driver: bridge
