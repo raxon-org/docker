@@ -5,8 +5,8 @@
     "keywords" : ["node", "raxon", "org", "keyboard", "package", "framework", "raxon.org", "docker"],
     "homepage": "https://raxon.org",
     "require": {
-        "raxon_org/framework": ">=2024.09.08.4",
-        "raxon_org/test": ">=2024.09.08.4"
+        "raxon/framework": ">=2024.09.08.4",
+        "raxon/test": ">=2024.09.08.4"
     },
     "license" : "MIT",
     "authors" : [{
