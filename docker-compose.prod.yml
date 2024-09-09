@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  vps2_core:
+    container_name: docker-12.2-core
+    image: docker/12.2/core
+    restart: always
+    build:
+      dockerfile: ./Docker/Dockerfile
+      context: .
+    working_dir: /Application
+    volumes:
+      - .:/Application
+    tmpfs:
+      - /tmp/differrence/fun
+    command: ['/usr/bin/init']
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - difference-fun-network
+networks:
+  difference-fun-network:
+    driver: bridge
