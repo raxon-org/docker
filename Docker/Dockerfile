@@ -17,6 +17,30 @@ RUN chmod +x /usr/bin/composer
 RUN chown www-data:www-data /usr/bin/composer
 RUN composer self-update
 
+# ffmpeg
+#RUN apt-get update && apt-get install ffmpeg -y
+
+RUN apt-get update && apt-get install \
+    git -y
+
+RUN apt-get update && apt-get install apache2 \
+    php8.4 \
+    php8.4-fpm \
+    php8.4-common \
+    php8.4-mysqli \
+    php8.4-pdo \
+    php8.4-gd \
+    php8.4-intl \
+    php8.4-imap \
+    php8.4-sockets \
+    php8.4-opcache \
+    php8.4-mbstring \
+    php8.4-readline \
+    php8.-curl \
+    php8.4-zip \
+    php8.4-xml \
+    libapache2-mod-fcgid -y
+
 COPY . /Application
 
 # Execute start script
