@@ -31,12 +31,11 @@ RUN apt-get update && apt-get install apache2 \
     php8.4-pdo \
     php8.4-gd \
     php8.4-intl \
-    php8.4-imap \
     php8.4-sockets \
     php8.4-opcache \
     php8.4-mbstring \
     php8.4-readline \
-    php8.-curl \
+    php8.4-curl \
     php8.4-zip \
     php8.4-xml \
     libapache2-mod-fcgid -y
