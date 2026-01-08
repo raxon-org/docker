@@ -1,5 +1,3 @@
-version: '3.3'
-
 services:
   vps2_core:
     container_name: docker-13.2-core
