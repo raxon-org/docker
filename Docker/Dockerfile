@@ -38,6 +38,7 @@ RUN apt-get update && apt-get install apache2 \
     php8.4-curl \
     php8.4-zip \
     php8.4-xml \
+    sqlite3 \
     libapache2-mod-fcgid -y
 
 COPY . /Application
