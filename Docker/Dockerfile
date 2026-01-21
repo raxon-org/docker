@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install apache2 \
     php8.4 \
     php8.4-fpm \
     php8.4-common \
+    php8.4-mysql \
     php8.4-mysqli \
     php8.4-pdo \
     php8.4-gd \
